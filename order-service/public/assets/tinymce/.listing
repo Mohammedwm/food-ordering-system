@@ -1,0 +1,10 @@
+drwxr-xr-x    6 qudsradio  qudsradio        4096 Jan 27 13:39 .
+drwxr-xr-x    4 qudsradio  qudsradio        4096 Jan 27 13:39 ..
+-rw-r--r--    1 qudsradio  qudsradio        2122 Nov 23  2019 index.js
+-rw-r--r--    1 qudsradio  qudsradio        3591 Oct 11  2017 jquery.tinymce.min.js
+drwxr-xr-x    2 qudsradio  qudsradio        4096 Jan 27 13:39 langs
+-rw-r--r--    1 qudsradio  qudsradio       26427 Oct 11  2017 license.txt
+drwxr-xr-x   46 qudsradio  qudsradio        4096 Jan 27 13:39 plugins
+drwxr-xr-x    3 qudsradio  qudsradio        4096 Jan 27 13:39 skins
+drwxr-xr-x    4 qudsradio  qudsradio        4096 Jan 27 13:39 themes
+-rw-r--r--    1 qudsradio  qudsradio      405092 Oct 11  2017 tinymce.min.js
