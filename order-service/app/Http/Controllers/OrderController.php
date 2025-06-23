@@ -43,7 +43,7 @@ class OrderController extends Controller
             if ($response->successful()) {
                 $user = $response->json();
             } else {
-                return apiError('Restaurant not found', 404);
+                return apiError('user not found', 404);
             }
             if ($restaurants->status != 1) {
                 return apiError('The merchant is not currently accepting orders', 422);
@@ -60,10 +60,17 @@ class OrderController extends Controller
             ]);
             $order_item = json_decode($request->order_item, True);
             foreach ($order_item as $item) {
+                $response = Http::withToken('YOUR_AUTH_TOKEN')->get("/api/restaurants/product/{$item['product_id']}");
+                if ($response->successful()) {
+                    $product = $response->json();
+                } else {
+                    return apiError('product not found', 404);
+                }
+
                 $order->items()->Create([
-                    'product_id' => $item['product_id'],
-                    'product_name' => $item['product_name'] ?? null,
-                    'price' => $item['price'] ?? 0,
+                    'product_id' => $product->id,
+                    'product_name' => $product->product_name ?? null,
+                    'price' => $product->price ?? 0,
                     'quantity' => $item['quantity'] ?? 1,
                 ]);
             }
