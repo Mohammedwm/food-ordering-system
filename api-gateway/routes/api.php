@@ -11,7 +11,7 @@ Route::post('/orders/create', function (Request $request) {
     return $response;
 });
 Route::get('/orders/show', function (Request $request) {
-    $response = Http::post('/order-service/api/show', $request->all());
+    $response = Http::get('/order-service/api/show', $request->all());
     return $response;
 });
 
@@ -21,6 +21,6 @@ Route::post('/restaurant/create', function (Request $request) {
 });
 
 Route::get('/restaurant/show', function (Request $request) {
-    $response = Http::post('/restaurant-service/api/show', $request->all());
+    $response = Http::get('/restaurant-service/api/show', $request->all());
     return $response;
 });
