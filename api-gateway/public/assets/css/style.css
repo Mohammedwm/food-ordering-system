@@ -1,0 +1,144 @@
+/*@font-face {*/
+/*font-family: Cairo-Regular;*/
+/*src: url(../fonts/Cairo-Regular.ttf);*/
+/*}*/
+
+/*body,h3 {*/
+/*font-family: Cairo-Regular !important;*/
+/*font-family: 'Cairo' !important;*/
+/*}*/
+/*.kt-portlet__head-title{*/
+/*font-family: Cairo !important;*/
+/*}*/
+/*.target_parent{*/
+/*    font-size: 14px !important;*/
+/*    font-weight: bold !important;*/
+/*}*/
+/*.target_child{*/
+/*    font-size: 14px !important;*/
+/*     margin: 0px 20px !important;*/
+/*}*/
+/*@font-face{*/
+/*    font-family:Al-Jazeera-Arabic-Bold;*/
+/*    !*src:url('../fonts/Al-Jazeera-Arabic-Bold.eot');*!*/
+/*    !*src:url('../fonts/Al-Jazeera-Arabic-Bold.eot?#iefix') format('embedded-opentype'),*!*/
+/*    url('../fonts/Al-Jazeera-Arabic-Bold.woff') format('woff'),*/
+/*    url('../fonts/Al-Jazeera-Arabic-Bold.ttf') format('truetype');*/
+/*    font-weight:400;font-style:normal;font-display:auto*/
+/*}*/
+/*@font-face{font-family:Al-Jazeera-Arabic-Regular;*/
+/*    src:url('../fonts/Al-Jazeera-Arabic-Regular.eot');*/
+/*    src:url('../fonts/Al-Jazeera-Arabic-Regular.eot?#iefix') format('embedded-opentype'),*/
+/*    url('../fonts/Al-Jazeera-Arabic-Regular.woff') format('woff'),*/
+/*    url('../fonts/Al-Jazeera-Arabic-Regular.ttf') format('truetype');*/
+/*    font-weight:400;font-style:normal;font-display:auto*/
+/*}!*!*/
+
+@font-face {
+    /*font-family: DroidKufi;*/
+    font-family: Al-Jazeera-Arabic-Bold;
+    /*src: url(../fonts/DroidKufi-Regular.ttf);*/
+    src: url(../fonts/Al-Jazeera-Arabic-Bold.ttf);
+    /*font-weight:400;font-style:normal;font-display:auto*/
+}
+
+body {
+    font-family: Al-Jazeera-Arabic-Bold !important;
+    font-family: 'Al-Jazeera-Arabic-Bold' !important;
+    /*font-family: DroidKufi !important;*/
+    /*font-family: 'DroidKufi' !important;*/
+}
+
+/*body,h3 {*/
+/*    font-family: DroidKufi !important;*/
+/*    font-family: 'DroidKufi' !important;*/
+/*}*/
+
+/*.kt-portlet__head-title{*/
+/*    font-family: DroidKufi !important;*/
+/*}*/
+
+/*.my-btn-sm{*/
+/*    padding: 4px !important;*/
+/*    margin: 0px !important; height: 25px !important; width: 25px !important;*/
+/*}*/
+/*.bootstrap-select > .dropdown-toggle.bs-placeholder.btn-light {*/
+/*    height: 37px;*/
+/*}*/
+/*[data-notify="dismiss"],[data-notify="message"]{*/
+/*    display: block;*/
+/*}*/
+/*.alert[data-notify] [data-notify="icon"]*/
+/*{*/
+/*     display: block !important;*/
+/*    text-align: left !important;*/
+
+/*}*/
+
+/*.bootstrap-select > .dropdown-toggle.btn-light, .bootstrap-select > .dropdown-toggle.btn-secondary {*/
+/*    height: 38px !important;*/
+/*}*/
+/*.bootstrap-select .dropdown-toggle .filter-option-inner-inner {*/
+/*     text-align: right !important;*/
+/*}*/
+/*.table_my_class {*/
+/*    border-collapse: collapse !important;*/
+/*}*/
+/*.table_my_class, td, th {*/
+/*    border: 1px solid #b7b7b769;*/
+/*    padding: 3px;*/
+/*    font-size: 11px;*/
+/*}*/
+/*.table_my_class {*/
+/*    width: 100%;*/
+/*    border-collapse: collapse;*/
+/*}*/
+
+table.dataTable > thead > tr > td:not(.sorting_disabled), table.dataTable > thead > tr > th:not(.sorting_disabled) {
+    text-align: right;
+    padding-right: 0.75rem;
+}
+.flatpickr-calendar .dayContainer,
+.flatpickr-calendar .flatpickr-weekdaycontainer {
+  flex-direction: row-reverse;
+}
+.flatpickr-month {
+  height: 32px;
+}
+.flatpickr-prev-month {
+  left: auto !important;
+  right: 0;
+  width: fit-content;
+  transform: scaleX(-1);
+}
+.flatpickr-next-month {
+  right: unset;
+  left: 0;
+  width: fit-content;
+  transform: scaleX(-1);
+}
+.flatpickr-day .selected.startRange,
+.startRange.startRange,
+.endRange.startRange {
+  border-radius: 0 50px 50px 0;
+}
+.flatpickr-day .selected.endRange,
+.flatpickr-day .startRange.endRange,
+.flatpickr-day .endRange.endRange {
+  border-radius: 50px 0 0 50px;
+}
+.flatpickr-day .selected.startRange + .endRange:not(:nth-child(7n+1)),
+.flatpickr-day .startRange.startRange + .endRange:not(:nth-child(7n+1)),
+.flatpickr-day .endRange.startRange + .endRange:not(:nth-child(7n+1)) {
+  box-shadow: 10px 0 0 #569ff7;
+}
+
+/*
+Turn Off Number Input Spinners:
+https://css-tricks.com/snippets/css/turn-off-number-input-spinners/
+*/
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
